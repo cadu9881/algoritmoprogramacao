@@ -1,0 +1,29 @@
+//Escrever um algoritmo que leia dois valores distintos inteiros e informe qual é o
+maior e diga se este número maior está no intervalo entre 1 a 99 100 e 199 ou maior que 200.
+
+Algoritmo <ler_valores>
+
+Inicio
+
+Var
+n1, n2, maior: inteiro
+
+Escreva ("Digite um valor numérico: ")
+Leia (n1)
+Escreva ("Digite outro valor: ")
+Leia (n2)
+Se n1 > n2 entao
+  maior <- n1
+Senao
+  maior <- n2
+FimSe
+Se (maior >= 1) e (maior <= 99) entao
+  Escreva (maior, " o valor está no intervalo entre 1 a 99.")
+Senao
+  Se (maior >= 100) e (maior <= 199) entao
+    Escreva (maior, " o valor está no intervalo entre 100 a 199.")
+  Senao 
+    Se maior >= 200 entao
+      Escreva (maior, " o valor é maior que 200.")
+    FimSe
+FimAlgoritmo

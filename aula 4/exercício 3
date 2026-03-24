@@ -1,0 +1,17 @@
+//Elaborar um algoritmo que efetue a apresentação do valor da conversão em real (R$) de um valor lido em dólar (US$). O algoritmo deverá solicitar o valor da cotação do dólar e também a quantidade de dólares disponíveis com o usuário
+
+Algoritmo <conversão_da_moeda> 
+
+Inicio 
+
+Var 
+eua, real, conversao: real 
+
+Escreva ("Digite o valor em Doláres: (US$) ") 
+Leia (eua) 
+Escreva (" Qual o valor da cotação? (R$) ") 
+Leia (real) 
+conversao <- eua * real 
+Escreva (eua, " US$ = " , conversao , " R$ ") 
+
+FimAlgoritmo  

@@ -1,0 +1,43 @@
+//Faça uma função que recebe, por parâmetro um valor N, um valor O e um valor T e 
+calcule e escreve a tabuada de 1 até T. Mostre a tabuada na forma: Onde "N" é o 
+valor de cálculo da tabuada "O" é o operador da tabuada "T" é o ultimo número que 
+será realizado a conta da tabuada.
+exemplo, n=5, O="S" e T=10, irá fazer a tabuada de soma do numero 5 até chegar no 
+número 10.
+
+Algoritmo <tabuada>
+
+Inicio
+
+Var
+n, final, c, valor: inteiro
+op: caractere
+
+EscrevaL (" ------------------------------------------------ ")
+EscrevaL ("        T    A    B    U    A    D    A           ")
+EscrevaL (" ------------------------------------------------ ")
+Escreva (" Digite o n° da tabuada: ")
+Leia (n)
+Escreva (" Digite o operador que deseja: (+/-/x/:) ")
+Leia (op)
+Escreva (" Digite o n° final: ")
+Leia (final)
+Para c <- 1 ate final faca
+  Se (op = "+") entao
+    valor <- n + c
+  Senao
+    Se (op = "-") entao
+      valor <- n - c
+    Senao 
+      Se (op = "x") entao
+        valor <- n * c
+      Senao 
+        Se (op = ":") entao
+          valor <- n / c 
+        FimSe
+      FimSe
+    FimSe
+  FimSe
+  EscrevaL (n, op, c, "=" ,valor) 
+FimPara
+FimAlgoritmo

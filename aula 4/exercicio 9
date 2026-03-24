@@ -1,0 +1,51 @@
+//A concessionária de veículos "CARANGO VELHO" está vendendo os seus veículos com
+desconto. Faça um algoritmo que calcule e exiba o valor de desconto e o valor a ser
+pago pelo cliente de vários carros. O desconto deverá ser calculado de acordo com 
+ano do veículo. até 2010 - 12% e acima de 2010 - 7%. O sistema deverá perguntar se 
+deseja continuar calculando desconto até que a resposta digite: "(N) Não". Informar total de carros com o ano até 2010 e total geral.
+
+Algoritmo <concessionaria>
+
+Inicio
+
+Var
+valor, desc, total: real
+ano, total ano, total_carros: inteiro
+resp: caractere
+
+EscrevaL (" ---------------------------- ")
+EscervaL ("   C A R A N G O  V E L H O   ")
+EscrevaL (" ---------------------------- ")
+total ano <- 0
+total carros <- 0
+tdesc <- 0
+vtotal <- 0
+Repita
+  Escreva (" | Digite o valor do automóvel: ")
+  Leia (valor)
+  Escreva (" | Digite o ano do automóvel: ")
+  Leia (ano)
+    Se ano <= 2010 então 
+      desc <- (valor * 12)/100
+    Senao 
+      desc <- (valor * 7)/100
+    FimSe
+  total <- valor - desc
+  tdesc <- tdesc + desc
+  vtotal <- vtotal + total 
+  EscrevaL (" | Valor descontado:(R$) " + desc:10:2)
+  EscrevaL (" | Valor total: " + total:10:2) 
+  EscrevaL (" | Deseja continuar? (s/n)")
+  Leia (resp)
+  Se ano <= 2010 entao
+    total_ano <- total_ano + 1
+  FimSe 
+  total_carros <- total_carros + 1  
+Ate (resp = "n") ou (resp = "N")
+EscrevaL (" | ------------------------------------------------- ") 
+EscrevaL (" | TOTAL DE CARROS ATÉ 2010: " + total_ano)     
+EscrevaL (" | TOTAL DE CARROS VISUALIZADOS: " + total_carros)
+EscrevaL (" | VALOR TOTAL DESCONTADO: " + tdesc:10:2)
+EscrevaL (" | VALOR TOTAL: " + vtotal:10:2)
+EscrevaL (" | ------------------------------------------------- ")
+FimAlgoritmo

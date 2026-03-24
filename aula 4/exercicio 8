@@ -1,0 +1,30 @@
+//faça um algoritmo que receba a idade de 75 pessoas e mostre mensagem informando "maior idade" e "menor idade" e "idoso" para cada pessoa. Considere a idade a partirde 18 anos como maior de idade e idoso a partir de 60 anos.
+
+Algoritmo <Idade>
+
+Inicio
+
+Var
+nome, class: caractere
+idade, C: inteiro
+
+C <- 1
+Enquanto C <= 75 faca
+  Leia ("NOME: " + nome)
+  Leia ("IDADE: " + idade)
+  Se idade >= 60 então
+    class <- ("IDOSO(A)")
+  Senao
+    Se idade >= 18 entao
+      class <- ("MAIOR DE IDADE")
+    Senao
+      class <- ("MENOR DE IDADE")
+    FimSe
+  FimSe 
+  Escreva ("CLASSIFICAÇÃO: " + class)
+  C <- C + 1
+FimEnquanto
+FimAlgoritmo
+
+     
+ 
